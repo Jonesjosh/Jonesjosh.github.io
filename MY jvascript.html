@@ -1,0 +1,41 @@
+<! doctype html>
+<html>
+    <head>
+        <title>hey</title>
+    </head>
+    <body>
+        <style>
+#container{
+    widows: 400px;
+    height:400px;
+    background:blueviolet;
+    position:relative;
+}
+#box {
+width:50px;
+height:50px;
+background:red;
+position:absolute;
+}
+</style>
+<div id="container">
+    <div id="box"></div>
+</div>
+
+        <script>
+            var t=setInterval(move,500);
+            var pos=0;
+            var box=document.getElementById("box");
+            function move(){
+                pos+=50;
+                box.style.left=pos+"px";
+            }
+            
+            
+        
+            
+            </script>   
+         
+        
+    </body>
+</html>
